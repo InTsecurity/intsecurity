@@ -1,0 +1,182 @@
+.about {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.about--title {
+  color: #d8d8d8;
+}
+
+.about--head {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 55px;
+}
+
+.shade {
+  color: #d8d8d8;
+  font-size: 4.5rem;
+  margin-top: 45px;
+}
+
+.about--underline {
+  display: inline-block;
+  position: absolute;
+  margin-top: 50px;
+  width: 180px;
+  height: 4px;
+  border-radius: 400px;
+  background-color: rgb(29, 73, 206);
+  z-index: -1;
+}
+
+.underline-2 {
+  width: 180px;
+  margin-left: 10px;
+  margin-top: 46px;
+  rotate: -2.5deg;
+  border-radius: 40px 2px;
+}
+
+.about--secure {
+  color: #d8d8d8;
+  width: 600px;
+  margin: 30px auto;
+  padding-top: 20px;
+}
+
+.about--contact-us {
+  width: 150px;
+  margin-top: 25px;
+  height: 40px;
+  background-color: rgb(29, 73, 206);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Neue Machina", sans-serif;
+  cursor: pointer;
+}
+
+.about--contact-us:hover {
+  background-color: #d8d8d8;
+  color: black;
+  transform: scale(1.1);
+}
+
+.about--contact-us:hover::after {
+  transform: rotate3d(1, 0, 0, 100deg);
+  margin-top: -65px;
+}
+
+.about--contact-us::after,
+.about--contact-us::before {
+  background-image: url("https://ik.imagekit.io/radix/gettech/highlights/showcase-circle.svg");
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 190px;
+  height: 210px;
+  margin-top: -20px;
+  margin-left: -140px;
+  filter: invert(1);
+  content: "";
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.about--contact-us::before {
+  margin-left: -46px;
+}
+
+.about--contact-us:hover::before {
+  transform: rotate3d(1, 0, 0, 100deg);
+  margin-top: -150px;
+}
+
+.white {
+  color: #d8d8d8;
+  display: inline-block;
+  transform: skew(-15deg);
+  position: relative;
+  margin-left: 5px;
+}
+
+.white::before {
+  content: "abilities";
+  overflow: hidden;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -17px;
+  height: 125%;
+  padding-top: 18px;
+  background-color: rgb(29, 73, 206);
+  width: 100%;
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  0%,
+  100% {
+    width: 0;
+  }
+
+  50% {
+    width: 330px;
+  }
+}
+
+/* Package overview styling */
+
+.packageoverview {
+  width: 95%;
+  margin-top: 140px;
+  /* outline: solid 2px rgb(29, 73, 206); */
+  border-top: solid 2px rgb(29, 73, 206);
+  border-right: solid 2px rgb(29, 73, 206);
+  border-bottom: solid 2px rgb(29, 73, 206);
+  margin-bottom: 60px;
+}
+
+.po--description {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 8%;
+  margin-top: 60px;
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+.po--d--details {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
+  color: #d8d8d8;
+  width: 60%;
+}
+
+.about--pricing {
+  width: 150px;
+  margin-top: 45px;
+  height: 40px;
+  background-color: rgb(29, 73, 206);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Neue Machina", sans-serif;
+  cursor: pointer;
+}
+
+.about--pricing:hover {
+  background-color: #d8d8d8;
+  color: black;
+  transform: scale(1.1);
+}

@@ -1,0 +1,28 @@
+.navbar {
+  height: 20px;
+  border-color: red;
+  padding: 50px 40px;
+  overflow: hidden;
+}
+
+.navbar--logo {
+  float: left;
+}
+
+.navbar--contents {
+  float: right;
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.navbar--details {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar--logo--img {
+  height: 40px;
+  margin-top: -12px;
+  margin-left: 40px;
+}
