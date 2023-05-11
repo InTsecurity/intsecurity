@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import PackageOverview from "./PackageOverview";
+import Why from "./Why-intsecurity";
 
 function About() {
   return (
@@ -26,6 +27,7 @@ function About() {
         Contact Us <span>&#x2192;</span>
       </button>
       <PackageOverview />
+      <Why />
     </div>
   );
 }

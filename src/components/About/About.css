@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  padding-top: 35px;
+  padding-top: 55px;
 }
 
 .about--title {
@@ -8,16 +8,16 @@
 }
 
 .about--head {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 50px;
   line-height: 55px;
 }
 
 .shade {
   color: #d8d8d8;
-  font-size: 4.5rem;
-  margin-top: 45px;
+  font-size: 5rem;
+  margin-top: 50px;
 }
 
 .about--underline {
@@ -43,12 +43,12 @@
   color: #d8d8d8;
   width: 600px;
   margin: 30px auto;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .about--contact-us {
   width: 150px;
-  margin-top: 25px;
+  margin-top: 35px;
   height: 40px;
   background-color: rgb(29, 73, 206);
   border: none;
@@ -57,7 +57,7 @@
   transition: 0.5s ease-in-out;
   font-weight: 600;
   font-size: 14px;
-  font-family: "Neue Machina", sans-serif;
+  font-family: Neue Machina, sans-serif;
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .about--contact-us::before {
-  margin-left: -46px;
+  margin-left: -45px;
 }
 
 .about--contact-us:hover::before {
@@ -127,20 +127,46 @@
   }
 
   50% {
-    width: 330px;
+    width: 350px;
   }
 }
 
 /* Package overview styling */
 
 .packageoverview {
-  width: 95%;
-  margin-top: 140px;
-  /* outline: solid 2px rgb(29, 73, 206); */
-  border-top: solid 2px rgb(29, 73, 206);
-  border-right: solid 2px rgb(29, 73, 206);
-  border-bottom: solid 2px rgb(29, 73, 206);
-  margin-bottom: 60px;
+  width: 90%;
+  margin: 140px auto;
+  border: solid 2px #d8d8d8;
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.6s;
+  padding-bottom: 50px;
+}
+
+.packageoverview::before {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: "";
+  z-index: 2;
+  right: -2px;
+  margin-top: -2px;
+  background-image: linear-gradient(#343434, #353535, #363636);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.packageoverview::after {
+  position: absolute;
+  width: 202px;
+  height: 202px;
+  content: "";
+  z-index: -1;
+  margin-top: -1px;
+  right: -2px;
+  background-color: #d8d8d8;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .po--description {
@@ -148,6 +174,7 @@
   font-weight: 600;
   margin-left: 8%;
   margin-top: 60px;
+  width: 50%;
   text-align: left;
   padding-bottom: 80px;
 }
@@ -157,7 +184,6 @@
   font-weight: 400;
   margin-top: 40px;
   color: #d8d8d8;
-  width: 60%;
 }
 
 .about--pricing {
@@ -179,4 +205,103 @@
   background-color: #d8d8d8;
   color: black;
   transform: scale(1.1);
+}
+
+.blackbox {
+  width: 40%;
+  margin-top: 150px;
+  scale: 1.2;
+}
+
+.blackbox--main {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.box--shadow {
+  display: block;
+  width: 150px;
+  height: 20px;
+  margin: 20px auto;
+  background-color: white;
+  filter: blur(2px);
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: rotate3d(1, 0, 0, 10deg);
+  animation-name: shadowFloat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shadowFloat {
+  0% {
+    transform: rotate3d(1, 0, 0, 60deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 10deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 60deg);
+  }
+}
+
+/* Why InTSecurity Styling */
+
+.about--why {
+  width: 100%;
+  background: #212121;
+  margin-bottom: 160px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.why--content {
+  text-align: right;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
+  color: #d8d8d8;
+  padding-right: 150px;
+}
+.why--main {
+  margin-top: 40px;
+}
+
+.why--content--head {
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+  text-align: right;
+}
+
+.why--img {
+  width: 40%;
+}
+
+.question--img {
+  height: 200px;
+  width: 250px;
+  margin-top: 30px;
 }
