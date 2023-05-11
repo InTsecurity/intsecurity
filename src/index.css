@@ -1,12 +1,14 @@
-@import url("https://db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina");
-
+@font-face {
+  font-family: Neue Machina;
+  src: url("./fonts/fonts.woff2");
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Neue Machina", sans-serif;
+  font-family: Neue Machina, sans-serif;
   background-image: linear-gradient(#282828, #444444);
-
+  overflow-x: hidden;
   color: white;
 }
 
