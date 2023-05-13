@@ -3,6 +3,8 @@
   border-color: red;
   padding: 50px 40px;
   overflow: hidden;
+  z-index: 3;
+  position: relative;
 }
 
 .navbar--logo {

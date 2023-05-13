@@ -266,7 +266,8 @@
 .about--why {
   width: 100%;
   background: #212121;
-  margin-bottom: 160px;
+  margin: 160px 0px;
+  padding: 60px 0px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -301,7 +302,10 @@
 }
 
 .question--img {
-  height: 200px;
-  width: 250px;
-  margin-top: 30px;
+  scale: 0.8;
+  margin-top: 15px;
+}
+
+.question--shadow {
+  margin-top: 0px;
 }
