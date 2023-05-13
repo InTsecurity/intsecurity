@@ -5,8 +5,12 @@ function Why() {
   return (
     <div className="about--why">
       <div className="why--img">
-        <img src={question} className="blackbox--main question--img"></img>
-        <span className="box--shadow"></span>
+        <img
+          src={question}
+          className="blackbox--main question--img"
+          alt="Questionmark"
+        ></img>
+        <span className="box--shadow question--shadow"></span>
       </div>
       <div className="po--description why--content ">
         <div className="why--content--head">Why</div>
