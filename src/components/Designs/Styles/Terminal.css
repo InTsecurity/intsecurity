@@ -1,0 +1,88 @@
+.terminal {
+  width: 55%;
+  height: 450px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: black;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.clean {
+  position: absolute;
+  scale: 0.8;
+  opacity: 0.6;
+  z-index: 1;
+  width: 40%;
+  margin-top: -220px;
+  transition: 0.2s;
+}
+
+.terminal--nav {
+  width: 100%;
+  height: 40px;
+  background-color: #d8d8d8;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.right--terminal {
+  right: 2%;
+}
+
+.t--nav--options {
+  display: flex;
+  height: 100%;
+  padding: 11px;
+}
+
+.t--buttons {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.close {
+  background-color: #ff483f;
+}
+
+.minimize {
+  background-color: #ecbb38;
+}
+
+.hide {
+  background-color: #36d3a8;
+}
+
+.terminal--main {
+  padding: 20px;
+}
+
+.loading {
+  width: 80%;
+  height: 25px;
+  margin-left: 20px;
+  display: block;
+  transition: 0.4s;
+  margin-top: 15px;
+  background: #ffffff;
+  background: linear-gradient(110deg, #e3e3e3 20%, #e1e1e1 35%, #d6d6d6 80%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.loading2 {
+  width: 120px;
+}

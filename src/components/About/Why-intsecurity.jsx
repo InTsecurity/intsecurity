@@ -15,7 +15,8 @@ function Why() {
       <div className="po--description why--content ">
         <div className="why--content--head">Why</div>
         <div className="why--content--head">
-          INT<span className="font">{"{"} </span>SECURITY
+          <span className="po--d-covered">INT</span>
+          <span className="font">{"{"} </span>SECURITY
           <span className="font">{"}"}?</span>
         </div>
         <div className="why--main">
