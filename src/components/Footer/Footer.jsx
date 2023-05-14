@@ -36,7 +36,7 @@ function Footer() {
                 strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
-                <title>github [#142]</title> <desc>Created with Sketch.</desc>
+                <title>github [#142]</title>
                 <defs> </defs>
                 <g
                   id="Page-1"
@@ -117,7 +117,8 @@ function Footer() {
         </div>
       </div>
       <div className="footer--copyright">
-        &#169;2023 INT{"{SECURITY}"} | All rights Reserved
+        &#169;2023 INT{"{SECURITY}"} | All rights Reserved | Made with &#10084;
+        by Team InTSecurity
       </div>
       <div className="website--version">v1.0.1</div>
     </div>

@@ -2,10 +2,11 @@ import React from "react";
 import "./About.css";
 import PackageOverview from "./PackageOverview";
 import Why from "./Why-intsecurity";
+import Support from "./Support";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about--title">
         Secure yourself from hackers by hackers!
       </div>
@@ -28,6 +29,7 @@ function About() {
       </button>
       <PackageOverview />
       <Why />
+      <Support />
     </div>
   );
 }

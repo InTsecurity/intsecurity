@@ -30,10 +30,15 @@
 
 .github {
   margin-top: 8px;
+  padding: 0px 10px;
+}
+.instagram {
+  margin-left: -5px;
 }
 
 .footer--copyright {
   padding: 20px;
+  color: #a5a5a5;
 }
 
 .website--version {
@@ -46,4 +51,11 @@
 
 .socials {
   cursor: pointer;
+  transition: 1s;
+}
+
+.socials:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  rotate: 360deg;
+  border-radius: 10px;
 }

@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  padding-top: 55px;
+  padding-top: 180px;
 }
 
 .about--title {
@@ -143,6 +143,10 @@
   position: relative;
   transition: 0.6s;
   padding-bottom: 50px;
+}
+
+.po--d-covered {
+  color: rgb(29, 73, 206);
 }
 
 .packageoverview::before {
