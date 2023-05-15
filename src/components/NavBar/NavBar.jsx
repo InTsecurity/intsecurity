@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import logo from "./../../images/logo.png";
+import { SwitchCase } from "../Designs/HackerText";
 
 function NavBar() {
   const [mouseY, setMouseY] = useState(0);
@@ -37,10 +38,42 @@ function NavBar() {
           ></img>
         </div>
         <div className="navbar--contents">
-          <div className="navbar--details">About</div>
-          <div className="navbar--details">Pricing</div>
-          <div className="navbar--details">Career</div>
-          <div className="navbar--details">Contact us</div>
+          <div
+            className="navbar--details"
+            id="about"
+            onMouseEnter={(e) => {
+              SwitchCase("about");
+            }}
+          >
+            About
+          </div>
+          <div
+            className="navbar--details"
+            id="pricing"
+            onMouseEnter={(e) => {
+              SwitchCase("pricing");
+            }}
+          >
+            Pricing
+          </div>
+          <div
+            className="navbar--details"
+            id="career"
+            onMouseEnter={(e) => {
+              SwitchCase("career");
+            }}
+          >
+            Career
+          </div>
+          <div
+            className="navbar--details"
+            id="contactUs"
+            onMouseEnter={(e) => {
+              SwitchCase("contactUs");
+            }}
+          >
+            Contact us
+          </div>
         </div>
       </div>
     </div>

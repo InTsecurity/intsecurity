@@ -15,6 +15,7 @@ function Terminal(props) {
       </div>
       <div className="terminal--main">
         <Typewriter
+          options={(typewriter) => {}}
           onInit={(typewriter) => {
             typewriter
               .start()
@@ -31,7 +32,7 @@ function Terminal(props) {
               .typeString("<br><br><br>")
               .pauseFor(500)
               .pasteString(
-                "<div style='font-size: 20px;'> Welcome to INT{Security}<br><br>"
+                `<div style="font-size: 17px; font-family:'Poppins',sans-serif; font-weight:600"> Welcome to INT{Security}<br>`
               )
               .pasteString("")
               .pauseFor(500)
@@ -41,7 +42,10 @@ function Terminal(props) {
 
               .pauseFor(500)
               .typeString("<br><br>")
-              .pasteString("<b>kali@intsecurity(/security):~ </b>");
+              .pasteString("<b>kali@intsecurity(/security):~ </b>")
+              .pauseFor(500)
+              .deleteAll()
+              .start();
           }}
         />
       </div>

@@ -313,3 +313,29 @@
 .question--shadow {
   margin-top: 0px;
 }
+
+/* Our hacker style */
+
+.ourhackers {
+  text-align: center;
+  height: 400px;
+}
+
+.oh--title {
+  width: 30%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.companyDiv {
+  margin-top: 60px;
+}
+
+.companyImg {
+  height: 60px;
+}
+
+.oh--companies {
+  display: flex;
+  justify-content: space-evenly;
+}
