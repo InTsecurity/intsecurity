@@ -3,6 +3,7 @@ import "./About.css";
 import PackageOverview from "./PackageOverview";
 import Why from "./Why-intsecurity";
 import Support from "./Support";
+import OurHackers from "./OurHackers";
 
 function About() {
   return (
@@ -30,6 +31,7 @@ function About() {
       <PackageOverview />
       <Why />
       <Support />
+      <OurHackers />
     </div>
   );
 }

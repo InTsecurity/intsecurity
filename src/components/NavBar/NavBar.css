@@ -28,6 +28,12 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  width: 120px;
+  transition: 0.4s;
+}
+
+.navbar--details:hover {
+  color: rgb(29, 73, 206);
 }
 
 .navbar--logo--img {
