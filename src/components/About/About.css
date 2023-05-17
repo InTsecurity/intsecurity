@@ -190,27 +190,6 @@
   color: #d8d8d8;
 }
 
-.about--pricing {
-  width: 150px;
-  margin-top: 45px;
-  height: 40px;
-  background-color: rgb(29, 73, 206);
-  border: none;
-  color: white;
-  border-radius: 4px;
-  transition: 0.5s ease-in-out;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: "Neue Machina", sans-serif;
-  cursor: pointer;
-}
-
-.about--pricing:hover {
-  background-color: #d8d8d8;
-  color: black;
-  transform: scale(1.1);
-}
-
 .blackbox {
   width: 40%;
   margin-top: 150px;

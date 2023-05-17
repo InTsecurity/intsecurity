@@ -37,15 +37,13 @@ function Terminal(props) {
               .pasteString("")
               .pauseFor(500)
               .typeString(
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi delectus, distinctio dicta esse reiciendis illo deleniti consequatur ducimus earum a.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi delectus, distinctio dicta esse reiciendis illo deleniti consequatur ducimus earum a."
+                "We understand that security is an ongoing process, which is why we offer continuous support and guidance to help you implement effective measures and maintain a robust security posture. With our commitment to your security, you can focus on your core business activities with the peace of mind that your digital assets are well-protected."
               )
 
               .pauseFor(500)
               .typeString("<br><br>")
               .pasteString("<b>kali@intsecurity(/security):~ </b>")
-              .pauseFor(500)
-              .deleteAll()
-              .start();
+              .pauseFor(500);
           }}
         />
       </div>

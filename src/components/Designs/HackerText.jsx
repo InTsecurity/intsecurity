@@ -33,7 +33,12 @@ function SwitchCase(x) {
     ];
     let t = document.getElementById(x);
     let word = t.innerText;
-    let loop = (word.length - 1) * 4;
+    let loop;
+    if (word.includes(" ")) {
+      loop = (word.length - 2) * 4;
+    } else {
+      loop = (word.length - 1) * 4;
+    }
     let subCount = 1;
     let newWord = "";
     let random;
@@ -45,8 +50,11 @@ function SwitchCase(x) {
           newWord = newWord + word[r];
         } else {
           random = Math.floor(Math.random() * 26);
-
-          newWord = newWord + alphabet[random];
+          if (word[r] === " ") {
+            newWord = newWord + " ";
+          } else {
+            newWord = newWord + alphabet[random];
+          }
         }
       }
       subCount++;

@@ -20,12 +20,12 @@ function Why() {
           <span className="font">{"}"}?</span>
         </div>
         <div className="why--main">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos omnis
-          nesciunt aperiam nostrum ducimus magni corporis cum nulla ad deleniti
-          mollitia ratione soluta quasi, non debitis aliquid sapiente nemo
-          quisquam iusto, voluptate tempore dolores, provident unde! Asperiores
-          voluptates accusantium ipsum odio velit iste, architecto et ipsam
-          excepturi consectetur minima eum?
+          In today's rapidly evolving threat landscape, it's more important than
+          ever to have a robust and reliable security solution in place to
+          protect your business. INT{"{Security}"} offer a wide range of
+          security solutions and services to help businesses of all sizes
+          mitigate risks, detect and respond to threats, and stay compliant with
+          industry regulations. Check out pricing for more details.
         </div>
       </div>
     </div>
