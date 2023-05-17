@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import logo from "./../../images/logo.png";
 import { SwitchCase } from "../Designs/HackerText";
 
 function NavBar() {
+  const navigate = useNavigate();
   const [mouseY, setMouseY] = useState(0);
 
   useEffect(() => {
@@ -25,7 +27,6 @@ function NavBar() {
       backgroundColor: "#212121",
     };
   }
-
   return (
     <div className="navbar--main" style={navStyle}>
       <div className="navbar">
@@ -41,6 +42,9 @@ function NavBar() {
           <div
             className="navbar--details"
             id="about"
+            onClick={(e) => {
+              navigate("/");
+            }}
             onMouseEnter={(e) => {
               SwitchCase("about");
             }}
@@ -53,6 +57,9 @@ function NavBar() {
             onMouseEnter={(e) => {
               SwitchCase("pricing");
             }}
+            onClick={(e) => {
+              navigate("/pricing");
+            }}
           >
             Pricing
           </div>
@@ -62,6 +69,9 @@ function NavBar() {
             onMouseEnter={(e) => {
               SwitchCase("career");
             }}
+            onClick={(e) => {
+              navigate("/career");
+            }}
           >
             Career
           </div>
@@ -70,6 +80,9 @@ function NavBar() {
             id="contactUs"
             onMouseEnter={(e) => {
               SwitchCase("contactUs");
+            }}
+            onClick={(e) => {
+              navigate("/contact");
             }}
           >
             Contact us
