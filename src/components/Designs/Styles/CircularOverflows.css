@@ -1,0 +1,52 @@
+.circularoverflows {
+  position: absolute;
+}
+
+.circle1 {
+  height: 350px;
+  width: 540px;
+  border-radius: 50%;
+  background-color: rgb(36, 87, 188);
+  z-index: -2;
+  opacity: 0.3;
+  margin-left: -120px;
+  margin-top: -120px;
+}
+
+.circle1::after {
+  content: "";
+  display: block;
+  height: 260px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  z-index: -2;
+  /* opacity: 0.8; */
+  transition: 0.8s;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(30px);
+    width: 500px;
+  }
+  30% {
+    transform: translateX(90px);
+    width: 400px;
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateX(90px);
+    width: 450px;
+  }
+  100% {
+    transform: translateY(30px);
+    width: 500px;
+  }
+}
