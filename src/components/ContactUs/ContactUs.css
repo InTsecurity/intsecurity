@@ -4,10 +4,11 @@
 .contactus--form {
   margin: 0px auto;
   width: 60%;
-  height: 800px;
   background-color: #ffffff;
   border: 0px;
   color: #2a2a2a;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .contactus--form::before {
@@ -19,25 +20,28 @@
 
 .contactus--content {
   padding: 90px;
+  padding-bottom: 20px;
 }
 
 .contactus--head {
   font-size: 42px;
+  font-weight: 600;
 }
 
 label {
   display: block;
+  font-weight: 600;
 }
 
 .cus--name {
-  padding: 30px 0px;
+  padding-top: 30px;
   width: 100%;
 }
 
 .cus--fname {
   display: inline-block;
   padding-right: 70px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .fname {
@@ -59,4 +63,57 @@ input:focus {
   width: 70%;
   font-size: 14px;
   color: rgb(29, 73, 206);
+  font-weight: 600;
+  z-index: 10;
+  position: relative;
+}
+
+.next--details {
+  padding: 0px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.service {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.serviceSelect {
+  width: 83%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border: solid 2px rgb(29, 73, 206);
+}
+
+.moreInformation {
+  width: 83%;
+}
+
+.submitbtn {
+  width: 150px;
+  margin-top: 55px;
+  height: 40px;
+  background-color: rgb(29, 73, 206);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Neue Machina, sans-serif;
+  cursor: pointer;
+}
+
+.submitbtn:hover {
+  background-color: #3d3d3d;
 }
