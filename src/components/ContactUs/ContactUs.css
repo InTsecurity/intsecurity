@@ -21,6 +21,7 @@
 .contactus--content {
   padding: 90px;
   padding-bottom: 20px;
+  transition: 0.5s;
 }
 
 .contactus--head {
@@ -42,6 +43,10 @@ label {
   display: inline-block;
   padding-right: 70px;
   padding-top: 40px;
+}
+
+.country {
+  margin-top: 45px;
 }
 
 .fname {
@@ -114,6 +119,38 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.success--img {
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+}
+
 .submitbtn:hover {
   background-color: #3d3d3d;
+}
+
+.success {
+  margin-top: 70px;
+}
+
+.checkmark {
+  stroke: green;
+  stroke-dashoffset: 745.74853515625;
+  stroke-dasharray: 745.74853515625;
+  animation: dash 2s ease-out forwards infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 745.74853515625;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.success--title {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
 }

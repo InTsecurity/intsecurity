@@ -7,12 +7,18 @@ export const handlePost = async (req, res) => {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: false, // Set to true if using a secure connection (e.g., port 465)
       auth: {
         user: process.env.SMTP_EMAIL,
         pass: process.env.SMTP_PASSWORD,
       },
     });
+
+    const mailPing = {
+      from: process.env.SMTP_EMAIL,
+      to: process.env.PING_EMAIL,
+      subject: "Contacted on intruder security.",
+      text: "You have been contacted on intruder security on intruder.tech. Please check it out.",
+    };
 
     const mailOptions = {
       from: process.env.SMTP_EMAIL,
@@ -26,25 +32,17 @@ export const handlePost = async (req, res) => {
         console.error(error);
       } else {
         console.log("Email sent: " + info.response);
+        transporter.sendMail(mailPing, (error, info) => {
+          if (error) {
+            console.error(error);
+          } else {
+            console.log("Email sent:" + info.response);
+          }
+        });
         res.status(200).json({
           msg: "Email Sent",
           details: info.response,
         });
-      }
-    });
-
-    const mailPing = {
-      from: process.env.SMTP_EMAIL,
-      to: process.env.PING_EMAIL,
-      subject: "Contacted on intruder security.",
-      text: "You have been contacted on intruder security on intruder.tech. Please check it out.",
-    };
-
-    transporter.sendMail(mailPing, (error, info) => {
-      if (error) {
-        console.error(error);
-      } else {
-        console.log("Email sent:" + info.response);
       }
     });
   } catch (error) {

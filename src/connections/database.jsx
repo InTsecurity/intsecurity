@@ -1,5 +1,6 @@
 import { Client, Databases, ID } from "appwrite";
 import { sendMail } from "../api";
+import { SuccessfullySubmited } from "../components/ContactUs/Contactus";
 
 const client = new Client();
 
@@ -9,9 +10,9 @@ client
   .setEndpoint("https://cloud.appwrite.io/v1")
   .setProject("6466156953c7cbf55e25");
 
-const SubmitDetails = async (details) => {
+const SubmitDetails = async (details, setisSubmitted, setsuccess) => {
   try {
-    let data = await databases.createDocument(
+    await databases.createDocument(
       "646615fd3106cc9881b6",
       "646616113672ba02e88e",
       ID.unique(),
@@ -20,6 +21,7 @@ const SubmitDetails = async (details) => {
         LastName: details.lname,
         Email: details.email,
         PhoneNumber: details.phone,
+        Country: details.country,
         Organization: details.org,
         OrgWebsite: details.orgWeb,
         SecurityPlan: details.plan,
@@ -27,8 +29,10 @@ const SubmitDetails = async (details) => {
       }
     );
     sendMail(details.email);
+    setsuccess(SuccessfullySubmited);
   } catch (err) {
-    console.log(err);
+    console.log("Something went wrong");
+    setisSubmitted(false);
   }
 };
 
