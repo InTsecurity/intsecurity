@@ -13,10 +13,9 @@ dotenv.config();
 app.use("/", postRoute);
 
 app.get("/", (req, res) => {
-  //   const { email } = req.body;
   console.log("opened");
 });
 
 app.listen("5000", () => {
-  console.log("Hiiiiii");
+  console.log("Sever started at port 5000.");
 });
