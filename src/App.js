@@ -3,6 +3,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import Contactus from "./components/ContactUs/Contactus";
+import Pricing from "./components/Pricing/Pricing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" Component={About}></Route>
             <Route path="/contact" Component={Contactus}></Route>
+            <Route path="/pricing" Component={Pricing}></Route>
           </Routes>
         </header>
         <Footer />
