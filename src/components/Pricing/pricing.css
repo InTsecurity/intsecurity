@@ -1,0 +1,19 @@
+.pricing {
+  padding-top: 160px;
+}
+
+.p--title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-left: 120px;
+}
+
+.blue {
+  color: rgb(29, 73, 206);
+}
+
+.pricing--cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 120px 0px;
+}
